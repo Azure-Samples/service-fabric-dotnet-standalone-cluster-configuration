@@ -1,7 +1,7 @@
 {
     "name": "SampleCluster",
     "clusterConfigurationVersion": "1.0.0",
-    "apiVersion": "2016-09-26",
+    "apiVersion": "01-2017",
     "nodes": [
         {
             "nodeName": "vm0",
@@ -87,10 +87,6 @@
                     "startPort": "20001",
                     "endPort": "20031"
                 },
-                "ephemeralPorts": {
-                    "startPort": "20032",
-                    "endPort": "20287"
-                },
                 "isPrimary": true
             },
             {
@@ -105,10 +101,6 @@
                     "startPort": "20288",
                     "endPort": "20318"
                 },
-                "ephemeralPorts": {
-                    "startPort": "20319",
-                    "endPort": "20574"
-                },
                 "isPrimary": true
             },
             {
@@ -122,10 +114,6 @@
                 "applicationPorts": {
                     "startPort": "20575",
                     "endPort": "20605"
-                },
-                "ephemeralPorts": {
-                    "startPort": "20606",
-                    "endPort": "20861"
                 },
                 "isPrimary": false
             }
