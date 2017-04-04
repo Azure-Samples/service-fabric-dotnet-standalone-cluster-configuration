@@ -37,8 +37,8 @@
         "security": {
             "ServerCredentialType": "Windows",
             "WindowsIdentities": {
-                "ClustergMSAIdentity": "accountname@fqdn"
-                "ClusterSPN": "fqdn"
+                "ClustergMSAIdentity": "accountname@fqdn",
+                "ClusterSPN": "fqdn",
                 "ClientIdentities": [
                     {
                         "Identity": "domain\\username",
