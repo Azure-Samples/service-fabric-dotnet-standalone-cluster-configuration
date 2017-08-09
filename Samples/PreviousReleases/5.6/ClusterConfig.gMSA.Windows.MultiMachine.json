@@ -1,7 +1,7 @@
 {
     "name": "SampleCluster",
     "clusterConfigurationVersion": "1.0.0",
-    "apiVersion": "05-2017",
+    "apiVersion": "04-2017",
     "nodes": [
         {
             "nodeName": "vm0",
@@ -28,12 +28,13 @@
     "properties": {
         "diagnosticsStore": 
         {
-            "metadata":  "Please replace the diagnostics file share with an actual file share accessible from all cluster machines. For example, \\\\machine1\\DiagnosticsStore.",
+            "metadata":  "Please replace the diagnostics file share with an actual file share accessible from all cluster machines.",
             "dataDeletionAgeInDays": "7",
             "storeType": "FileShare",
             "connectionstring": "c:\\ProgramData\\SF\\DiagnosticsStore"
         },
         "security": {
+            "ServerCredentialType": "Windows",
             "WindowsIdentities": {
                 "ClustergMSAIdentity": "accountname@fqdn",
                 "ClusterSPN": "fqdn",
