@@ -1,7 +1,7 @@
 {
     "name": "SampleCluster",
     "clusterConfigurationVersion": "1.0.0",
-    "apiVersion": "10-2017",
+    "apiVersion": "08-2017",
     "nodes": [
         {
             "nodeName": "vm0",
@@ -26,20 +26,58 @@
         }
     ],
     "properties": {
-        "diagnosticsStore": 
+       "diagnosticsStore": 
         {
             "metadata":  "Please replace the diagnostics file share with an actual file share accessible from all cluster machines. For example, \\\\machine1\\DiagnosticsStore.",
             "dataDeletionAgeInDays": "7",
             "storeType": "FileShare",
-            "connectionstring": "c:\\ProgramData\\SF\\DiagnosticsStore"
+            "connectionstring": "\\\\machine1\\DiagnosticsStore"
         },
         "security": {
-            "WindowsIdentities": {
-                "ClustergMSAIdentity": "accountname@fqdn",
-                "ClusterSPN": "fqdn",
-                "ClientIdentities": [
+            "metadata": "The Credential type X509 indicates this is cluster is secured using X509 Certificates. The thumbprint format is - d5 ec 42 3b 79 cb e5 07 fd 83 59 3c 56 b9 d5 31 24 25 42 64.",
+            "ClusterCredentialType": "X509",
+            "ServerCredentialType": "X509",
+            "CertificateInformation": {
+                "ClusterCertificateCommonNames": {
+                  "CommonNames": [
                     {
-                        "Identity": "domain\\username",
+                      "CertificateCommonName": "[CertificateCommonName]",
+                      "CertificateIssuerThumbprint": "[Thumbprint1,Thumbprint2,Thumbprint3,...]"
+                    }
+                  ],
+                  "X509StoreName": "My"
+                },
+                "ServerCertificateCommonNames": {
+                  "CommonNames": [
+                    {
+                      "CertificateCommonName": "[CertificateCommonName]",
+                      "CertificateIssuerThumbprint": "[Thumbprint1,Thumbprint2,Thumbprint3,...]"
+                    }
+                  ],
+                  "X509StoreName": "My"
+                },
+                "ReverseProxyCertificateCommonNames": {
+                  "CommonNames": [
+                      {
+                        "CertificateCommonName": "[CertificateCommonName]"
+                      }
+                    ],
+                    "X509StoreName": "My"
+                },
+                "ClientCertificateThumbprints": [
+                    {
+                        "CertificateThumbprint": "[Thumbprint]",
+                        "IsAdmin": false
+                    },
+                    {
+                        "CertificateThumbprint": "[Thumbprint]",
+                        "IsAdmin": true
+                    }
+                ],
+                "ClientCertificateCommonNames": [
+                    {
+                        "CertificateCommonName": "[CertificateCommonName]",
+                        "CertificateIssuerThumbprint": "[Thumbprint1,Thumbprint2,Thumbprint3,...]",
                         "IsAdmin": true
                     }
                 ]

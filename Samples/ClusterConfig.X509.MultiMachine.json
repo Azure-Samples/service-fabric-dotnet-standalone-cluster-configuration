@@ -1,7 +1,7 @@
 {
     "name": "SampleCluster",
     "clusterConfigurationVersion": "1.0.0",
-    "apiVersion": "08-2017",
+    "apiVersion": "10-2017",
     "nodes": [
         {
             "nodeName": "vm0",
@@ -41,21 +41,31 @@
                 "ClusterCertificateCommonNames": {
                   "CommonNames": [
                     {
-                      "CertificateCommonName": "[CertificateCommonName]",
-                      "CertificateIssuerThumbprint": "[Thumbprint1,Thumbprint2,Thumbprint3,...]"
+                      "CertificateCommonName": "[CertificateCommonName]"
                     }
                   ],
                   "X509StoreName": "My"
                 },
+                "ClusterCertificateIssuerStores": [
+                    {
+                         "IssuerCommonName": "[IssuerCommonName]",
+                         "X509StoreNames" : "Root"
+                    }
+                ],
                 "ServerCertificateCommonNames": {
                   "CommonNames": [
                     {
-                      "CertificateCommonName": "[CertificateCommonName]",
-                      "CertificateIssuerThumbprint": "[Thumbprint1,Thumbprint2,Thumbprint3,...]"
+                      "CertificateCommonName": "[CertificateCommonName]"
                     }
                   ],
                   "X509StoreName": "My"
                 },
+                "ServerCertificateIssuerStores": [
+                    {
+                        "IssuerCommonName": "[IssuerCommonName]",
+                        "X509StoreNames" : "Root"
+                    }
+                ],
                 "ReverseProxyCertificateCommonNames": {
                   "CommonNames": [
                       {
@@ -77,8 +87,13 @@
                 "ClientCertificateCommonNames": [
                     {
                         "CertificateCommonName": "[CertificateCommonName]",
-                        "CertificateIssuerThumbprint": "[Thumbprint1,Thumbprint2,Thumbprint3,...]",
                         "IsAdmin": true
+                    }
+                ],
+                "ClientCertificateIssuerStores": [
+                    {
+                        "IssuerCommonName": "[IssuerCommonName]",
+                        "X509StoreNames": "Root"
                     }
                 ]
             }
