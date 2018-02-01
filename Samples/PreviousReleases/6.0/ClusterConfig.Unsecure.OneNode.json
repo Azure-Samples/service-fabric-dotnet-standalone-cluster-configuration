@@ -1,7 +1,7 @@
 {
     "name": "SampleCluster",
     "clusterConfigurationVersion": "1.0.0",
-    "apiVersion": "10-2017",
+    "apiVersion": "08-2017",
     "nodes": [
       {
         "nodeName": "vm0",
@@ -9,20 +9,6 @@
         "nodeTypeRef": "NodeType0",
         "faultDomain": "fd:/dc1/r0",
         "upgradeDomain": "UD0"
-      },
-      {
-        "nodeName": "vm1",
-        "iPAddress": "localhost",
-        "nodeTypeRef": "NodeType1",
-        "faultDomain": "fd:/dc2/r0",
-        "upgradeDomain": "UD1"
-      },
-      {
-        "nodeName": "vm2",
-        "iPAddress": "localhost",
-        "nodeTypeRef": "NodeType2",
-        "faultDomain": "fd:/dc3/r0",
-        "upgradeDomain": "UD2"
       }
     ],
 
@@ -48,35 +34,7 @@
                 "endPort": "20031"
             },
             "isPrimary": true
-          },
-          {
-            "name": "NodeType1",
-            "clientConnectionEndpointPort": "19004",
-            "clusterConnectionEndpointPort": "19005",
-            "leaseDriverEndpointPort": "19006",
-            "serviceConnectionEndpointPort": "19007",
-            "httpGatewayEndpointPort": "19082",
-            "reverseProxyEndpointPort": "19083",
-            "applicationPorts": {
-                "startPort": "20288",
-                "endPort": "20318"
-            },
-            "isPrimary": true
-          },
-          {
-            "name": "NodeType2",
-            "clientConnectionEndpointPort": "19008",
-            "clusterConnectionEndpointPort": "19009",
-            "leaseDriverEndpointPort": "19010",
-            "serviceConnectionEndpointPort": "19011",
-            "httpGatewayEndpointPort": "19084",
-            "reverseProxyEndpointPort": "19085",
-            "applicationPorts": {
-                "startPort": "20575",
-                "endPort": "20605"
-            },
-            "isPrimary": false
-        }
+          }
       ],
       "fabricSettings": [
         {
