@@ -26,24 +26,25 @@
         }
     ],
     "properties": {
-        "diagnosticsStore": 
-        {
-            "metadata":  "Please replace the diagnostics file share with an actual file share accessible from all cluster machines. For example, \\\\localhost\\DiagnosticsStore.",
-            "dataDeletionAgeInDays": "21",
+        "diagnosticsStore": {
+            "metadata": "Please replace the diagnostics file share with an actual file share accessible from all cluster machines.",
+            "dataDeletionAgeInDays": "7",
             "storeType": "FileShare",
             "connectionstring": "c:\\ProgramData\\SF\\DiagnosticsStore"
         },
         "security": {
+            "metadata": "The Credential type X509 indicates this is cluster is secured using X509 Certificates. The thumbprint format is - d5 ec 42 3b 79 cb e5 07 fd 83 59 3c 56 b9 d5 31 24 25 42 64.",
             "ClusterCredentialType": "Windows",
-            "ServerCredentialType": "Windows",
-            "WindowsIdentities": {                
-                "ClusterIdentity": "domain\\machinegroup",
-                "ClientIdentities": [
-                    {
-                        "Identity": "domain\\username",
-                        "IsAdmin": true
-                    }
-                ]
+            "ServerCredentialType": "X509",
+            "WindowsIdentities": {
+                "ClusterIdentity": "domain\\machinegroup"
+            },
+            "CertificateInformation": {
+                "ServerCertificate": {
+                    "Thumbprint": "[Thumbprint]",
+                    "ThumbprintSecondary": "[Thumbprint]",
+                    "X509StoreName": "My"
+                }
             }
         },
         "nodeTypes": [

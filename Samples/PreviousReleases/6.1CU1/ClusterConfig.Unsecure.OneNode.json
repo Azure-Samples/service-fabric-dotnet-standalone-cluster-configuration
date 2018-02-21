@@ -5,33 +5,20 @@
     "nodes": [
       {
         "nodeName": "vm0",
-        "iPAddress": "machine1",
+        "iPAddress": "localhost",
         "nodeTypeRef": "NodeType0",
         "faultDomain": "fd:/dc1/r0",
         "upgradeDomain": "UD0"
-      },
-      {
-        "nodeName": "vm1",
-        "iPAddress": "machine2",
-        "nodeTypeRef": "NodeType0",
-        "faultDomain": "fd:/dc2/r0",
-        "upgradeDomain": "UD1"
-      },
-      {
-        "nodeName": "vm2",
-        "iPAddress": "machine3",
-        "nodeTypeRef": "NodeType0",
-        "faultDomain": "fd:/dc3/r0",
-        "upgradeDomain": "UD2"
       }
     ],
+
     "properties": {
         "diagnosticsStore": 
         {
-            "metadata":  "Please replace the diagnostics file share with an actual file share accessible from all cluster machines. For example, \\\\machine1\\DiagnosticsStore.",
-            "dataDeletionAgeInDays": "21",
+            "metadata":  "Please replace the diagnostics file share with an actual file share accessible from all cluster machines. For example, \\\\localhost\\DiagnosticsStore.",
+            "dataDeletionAgeInDays": "7",
             "storeType": "FileShare",
-            "connectionstring": "\\\\machine1\\DiagnosticsStore"
+            "connectionstring": "c:\\ProgramData\\SF\\DiagnosticsStore"
         },
         "nodeTypes": [
           {
