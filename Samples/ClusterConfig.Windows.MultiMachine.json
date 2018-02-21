@@ -29,7 +29,7 @@
         "diagnosticsStore": 
         {
             "metadata":  "Please replace the diagnostics file share with an actual file share accessible from all cluster machines. For example, \\\\machine1\\DiagnosticsStore.",
-            "dataDeletionAgeInDays": "7",
+            "dataDeletionAgeInDays": "21",
             "storeType": "FileShare",
             "connectionstring": "\\\\machine1\\DiagnosticsStore"
         },
