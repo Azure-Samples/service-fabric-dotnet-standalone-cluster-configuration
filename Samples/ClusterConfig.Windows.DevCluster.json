@@ -73,7 +73,7 @@
                     "startPort": "20288",
                     "endPort": "20318"
                 },
-                "isPrimary": true
+                "isPrimary": false
             },
             {
                 "name": "NodeType2",
