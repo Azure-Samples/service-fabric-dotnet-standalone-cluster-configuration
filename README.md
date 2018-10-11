@@ -19,3 +19,16 @@ The cluster configuration sample templates found in this repository can be used 
 
 To find more details related to Service Fabric Standalone cluster deployments, please refer to our documentation here: <br>
 [Create a standalone cluster](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-cluster-creation-for-windows-server)
+
+## Previous Standalone Package Releases
+
+[6.3.187.9494](https://download.microsoft.com/download/8/3/6/836E3E99-A300-4714-8278-96BC3E8B5528/6.3.187.9494/Microsoft.Azure.ServiceFabric.WindowsServer.6.3.187.9494.zip) <br/>
+[6.3.176.9494](https://download.microsoft.com/download/8/3/6/836E3E99-A300-4714-8278-96BC3E8B5528/6.3.176.9494/Microsoft.Azure.ServiceFabric.WindowsServer.6.3.176.9494.zip) <br/>
+[6.3.162.9494](https://download.microsoft.com/download/8/3/6/836E3E99-A300-4714-8278-96BC3E8B5528/6.3.162.9494/Microsoft.Azure.ServiceFabric.WindowsServer.6.3.162.9494.zip) <br/>
+[6.2.301.9494](https://download.microsoft.com/download/8/3/6/836E3E99-A300-4714-8278-96BC3E8B5528/6.2.301.9494/Microsoft.Azure.ServiceFabric.WindowsServer.6.2.301.9494.zip) <br/>
+[6.2.283.9494](https://download.microsoft.com/download/8/3/6/836E3E99-A300-4714-8278-96BC3E8B5528/6.2.283.9494/Microsoft.Azure.ServiceFabric.WindowsServer.6.2.283.9494.zip) <br/>
+[6.2.274.9494](https://download.microsoft.com/download/8/3/6/836E3E99-A300-4714-8278-96BC3E8B5528/6.2.274.9494/Microsoft.Azure.ServiceFabric.WindowsServer.6.2.274.9494.zip) <br/>
+[6.1.480.9494](https://download.microsoft.com/download/8/3/6/836E3E99-A300-4714-8278-96BC3E8B5528/6.1.480.9494/Microsoft.Azure.ServiceFabric.WindowsServer.6.1.480.9494.zip) <br/>
+[6.1.472.9494](https://download.microsoft.com/download/8/3/6/836E3E99-A300-4714-8278-96BC3E8B5528/6.1.472.9494/Microsoft.Azure.ServiceFabric.WindowsServer.6.1.472.9494.zip) <br/>
+[6.1.467.9494](https://download.microsoft.com/download/8/3/6/836E3E99-A300-4714-8278-96BC3E8B5528/6.1.467.9494/Microsoft.Azure.ServiceFabric.WindowsServer.6.1.467.9494.zip) <br/>
+[6.1.456.9494](https://download.microsoft.com/download/8/3/6/836E3E99-A300-4714-8278-96BC3E8B5528/6.1.456.9494/Microsoft.Azure.ServiceFabric.WindowsServer.6.1.456.9494.zip) <br/>
