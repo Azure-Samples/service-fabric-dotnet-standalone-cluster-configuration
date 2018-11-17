@@ -1,5 +1,6 @@
 {
-    "name": "SampleCluster",
+  "name": "SampleCluster",
+
     "clusterConfigurationVersion": "1.0.0",
     "apiVersion": "10-2017",
     "nodes": [
