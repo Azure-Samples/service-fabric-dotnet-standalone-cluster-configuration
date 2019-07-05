@@ -1,7 +1,9 @@
 ---
-services: service-fabric
-platforms: dotnet
-author: maburlik
+languages:
+- csharp
+products:
+- azure
+topic: sample
 ---
 
 # Service Fabric Standalone Cluster Configuration #
