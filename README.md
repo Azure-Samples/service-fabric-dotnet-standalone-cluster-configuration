@@ -1,6 +1,7 @@
 ---
 languages:
 - csharp
+- json
 products:
 - azure
 page_type: sample
