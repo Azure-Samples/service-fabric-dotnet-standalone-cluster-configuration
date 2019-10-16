@@ -8,7 +8,7 @@ page_type: sample
 description: "This sample project contains a set of configuration templates used for creating Service Fabric standalone clusters."
 ---
 
-# Service Fabric Standalone Cluster Configuration #
+# Service Fabric Standalone Cluster Configuration
 
 This sample project contains a set of configuration templates used for creating Service Fabric standalone clusters, to be used for hosting on private on-premises environments or on your choice of cloud provider. 
 
