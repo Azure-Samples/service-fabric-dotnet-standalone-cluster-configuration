@@ -1,51 +1,77 @@
 {
     "name": "SampleCluster",
     "clusterConfigurationVersion": "1.0.0",
-    "apiVersion": "05-2020",
+    "apiVersion": "10-2017",
     "nodes": [
         {
             "nodeName": "vm0",
-            "iPAddress": "localhost",
+            "iPAddress": "machine1",
             "nodeTypeRef": "NodeType0",
             "faultDomain": "fd:/dc1/r0",
             "upgradeDomain": "UD0"
         },
         {
             "nodeName": "vm1",
-            "iPAddress": "localhost",
-            "nodeTypeRef": "NodeType1",
+            "iPAddress": "machine2",
+            "nodeTypeRef": "NodeType0",
             "faultDomain": "fd:/dc1/r1",
             "upgradeDomain": "UD1"
         },
         {
             "nodeName": "vm2",
-            "iPAddress": "localhost",
-            "nodeTypeRef": "NodeType2",
+            "iPAddress": "machine3",
+            "nodeTypeRef": "NodeType0",
             "faultDomain": "fd:/dc1/r2",
             "upgradeDomain": "UD2"
         }
     ],
     "properties": {
-        "diagnosticsStore": 
+       "diagnosticsStore": 
         {
-            "metadata":  "Please replace the diagnostics file share with an actual file share accessible from all cluster machines. For example, \\\\localhost\\DiagnosticsStore.",
+            "metadata":  "Please replace the diagnostics file share with an actual file share accessible from all cluster machines. For example, \\\\machine1\\DiagnosticsStore.",
             "dataDeletionAgeInDays": "21",
             "storeType": "FileShare",
-            "connectionstring": "c:\\ProgramData\\SF\\DiagnosticsStore"
+            "connectionstring": "\\\\machine1\\DiagnosticsStore"
         },
         "security": {
             "metadata": "The Credential type X509 indicates this is cluster is secured using X509 Certificates. The thumbprint format is - d5 ec 42 3b 79 cb e5 07 fd 83 59 3c 56 b9 d5 31 24 25 42 64.",
             "ClusterCredentialType": "X509",
             "ServerCredentialType": "X509",
             "CertificateInformation": {
-                "ClusterCertificate": {
-                    "Thumbprint": "[Thumbprint]",
-                    "ThumbprintSecondary": "[Thumbprint]",
-                    "X509StoreName": "My"
+                "ClusterCertificateCommonNames": {
+                  "CommonNames": [
+                    {
+                      "CertificateCommonName": "[CertificateCommonName]"
+                    }
+                  ],
+                  "X509StoreName": "My"
                 },
-                "ServerCertificate": {
-                    "Thumbprint": "[Thumbprint]",
-                    "ThumbprintSecondary": "[Thumbprint]",
+                "ClusterCertificateIssuerStores": [
+                    {
+                         "IssuerCommonName": "[IssuerCommonName]",
+                         "X509StoreNames" : "Root"
+                    }
+                ],
+                "ServerCertificateCommonNames": {
+                  "CommonNames": [
+                    {
+                      "CertificateCommonName": "[CertificateCommonName]"
+                    }
+                  ],
+                  "X509StoreName": "My"
+                },
+                "ServerCertificateIssuerStores": [
+                    {
+                        "IssuerCommonName": "[IssuerCommonName]",
+                        "X509StoreNames" : "Root"
+                    }
+                ],
+                "ReverseProxyCertificateCommonNames": {
+                  "CommonNames": [
+                      {
+                        "CertificateCommonName": "[CertificateCommonName]"
+                      }
+                    ],
                     "X509StoreName": "My"
                 },
                 "ClientCertificateThumbprints": [
@@ -61,15 +87,15 @@
                 "ClientCertificateCommonNames": [
                     {
                         "CertificateCommonName": "[CertificateCommonName]",
-                        "CertificateIssuerThumbprint": "[Thumbprint]",
                         "IsAdmin": true
                     }
                 ],
-                "ReverseProxyCertificate": {
-                    "Thumbprint": "[Thumbprint]",
-                    "ThumbprintSecondary": "[Thumbprint]",
-                    "X509StoreName": "My"
-                }
+                "ClientCertificateIssuerStores": [
+                    {
+                        "IssuerCommonName": "[IssuerCommonName]",
+                        "X509StoreNames": "Root"
+                    }
+                ]
             }
         },
         "nodeTypes": [
@@ -85,35 +111,11 @@
                     "startPort": "20001",
                     "endPort": "20031"
                 },
-                "isPrimary": true
-            },
-            {
-                "name": "NodeType1",
-                "clientConnectionEndpointPort": "19004",
-                "clusterConnectionEndpointPort": "19005",
-                "leaseDriverEndpointPort": "19006",
-                "serviceConnectionEndpointPort": "19007",
-                "httpGatewayEndpointPort": "19082",
-                "reverseProxyEndpointPort": "19083",
-                "applicationPorts": {
-                    "startPort": "20288",
-                    "endPort": "20318"
+                "ephemeralPorts": {
+                    "startPort": "49152",
+                    "endPort": "65535"
                 },
                 "isPrimary": true
-            },
-            {
-                "name": "NodeType2",
-                "clientConnectionEndpointPort": "19008",
-                "clusterConnectionEndpointPort": "19009",
-                "leaseDriverEndpointPort": "19010",
-                "serviceConnectionEndpointPort": "19011",
-                "httpGatewayEndpointPort": "19084",
-                "reverseProxyEndpointPort": "19085",
-                "applicationPorts": {
-                    "startPort": "20575",
-                    "endPort": "20605"
-                },
-                "isPrimary": false
             }
         ],
         "fabricSettings": [
