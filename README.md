@@ -27,6 +27,7 @@ To find more details related to Service Fabric Standalone cluster deployments, p
 
 ## Previous Standalone Package Releases
 
+[7.2.477.9590](https://download.microsoft.com/download/8/3/6/836E3E99-A300-4714-8278-96BC3E8B5528/7.2.477.9590/Microsoft.Azure.ServiceFabric.WindowsServer.7.2.477.9590.zip) <br/>
 [7.2.445.9590](https://download.microsoft.com/download/8/3/6/836E3E99-A300-4714-8278-96BC3E8B5528/7.2.445.9590/Microsoft.Azure.ServiceFabric.WindowsServer.7.2.445.9590.zip) <br/>
 [7.2.434.9590](https://download.microsoft.com/download/8/3/6/836E3E99-A300-4714-8278-96BC3E8B5528/7.2.434.9590/Microsoft.Azure.ServiceFabric.WindowsServer.7.2.434.9590.zip) <br/>
 [7.2.413.9590](https://download.microsoft.com/download/8/3/6/836E3E99-A300-4714-8278-96BC3E8B5528/7.2.413.9590/Microsoft.Azure.ServiceFabric.WindowsServer.7.2.413.9590.zip) <br/>
