@@ -27,12 +27,23 @@ To find more details related to Service Fabric Standalone cluster deployments, p
 
 ## Previous Standalone Package Releases
 
+[9.1.1799.9590](https://download.microsoft.com/download/8/3/6/836E3E99-A300-4714-8278-96BC3E8B5528/9.1.1799.9590/Microsoft.Azure.ServiceFabric.WindowsServer.9.1.1799.9590.zip) <br/>
+[9.1.1653.9590](https://download.microsoft.com/download/8/3/6/836E3E99-A300-4714-8278-96BC3E8B5528/9.1.1653.9590/Microsoft.Azure.ServiceFabric.WindowsServer.9.1.1653.9590.zip) <br/>
+[9.1.1583.9590](https://download.microsoft.com/download/8/3/6/836E3E99-A300-4714-8278-96BC3E8B5528/9.1.1583.9590/Microsoft.Azure.ServiceFabric.WindowsServer.9.1.1583.9590.zip) <br/>
+[9.1.1436.9590](https://download.microsoft.com/download/8/3/6/836E3E99-A300-4714-8278-96BC3E8B5528/9.1.1436.9590/Microsoft.Azure.ServiceFabric.WindowsServer.9.1.1436.9590.zip) <br/>
 [9.1.1390.9590](https://download.microsoft.com/download/8/3/6/836E3E99-A300-4714-8278-96BC3E8B5528/9.1.1390.9590/Microsoft.Azure.ServiceFabric.WindowsServer.9.1.1390.9590.zip) <br/>
+[9.0.1526.9590](https://download.microsoft.com/download/8/3/6/836E3E99-A300-4714-8278-96BC3E8B5528/9.0.1526.9590/Microsoft.Azure.ServiceFabric.WindowsServer.9.0.1526.9590.zip) <br/>
+[9.0.1380.9590](https://download.microsoft.com/download/8/3/6/836E3E99-A300-4714-8278-96BC3E8B5528/9.0.1380.9590/Microsoft.Azure.ServiceFabric.WindowsServer.9.0.1380.9590.zip) <br/>
+[9.0.1309.9590](https://download.microsoft.com/download/8/3/6/836E3E99-A300-4714-8278-96BC3E8B5528/9.0.1309.9590/Microsoft.Azure.ServiceFabric.WindowsServer.9.0.1309.9590.zip) <br/>
+[9.0.1254.9590](https://download.microsoft.com/download/8/3/6/836E3E99-A300-4714-8278-96BC3E8B5528/9.0.1254.9590/Microsoft.Azure.ServiceFabric.WindowsServer.9.0.1254.9590.zip) <br/>
+[9.0.1155.9590](https://download.microsoft.com/download/8/3/6/836E3E99-A300-4714-8278-96BC3E8B5528/9.0.1155.9590/Microsoft.Azure.ServiceFabric.WindowsServer.9.0.1155.9590.zip) <br/>
 [9.0.1121.9590](https://download.microsoft.com/download/8/3/6/836E3E99-A300-4714-8278-96BC3E8B5528/9.0.1121.9590/Microsoft.Azure.ServiceFabric.WindowsServer.9.0.1121.9590.zip) <br/>
 [9.0.1107.9590](https://download.microsoft.com/download/8/3/6/836E3E99-A300-4714-8278-96BC3E8B5528/9.0.1107.9590/Microsoft.Azure.ServiceFabric.WindowsServer.9.0.1107.9590.zip) <br/>
 [9.0.1048.9590](https://download.microsoft.com/download/8/3/6/836E3E99-A300-4714-8278-96BC3E8B5528/9.0.1048.9590/Microsoft.Azure.ServiceFabric.WindowsServer.9.0.1048.9590.zip) <br/>
 [9.0.1028.9590](https://download.microsoft.com/download/8/3/6/836E3E99-A300-4714-8278-96BC3E8B5528/9.0.1028.9590/Microsoft.Azure.ServiceFabric.WindowsServer.9.0.1028.9590.zip) <br/>
 [9.0.1017.9590](https://download.microsoft.com/download/8/3/6/836E3E99-A300-4714-8278-96BC3E8B5528/9.0.1017.9590/Microsoft.Azure.ServiceFabric.WindowsServer.9.0.1017.9590.zip) <br/>
+[8.2.1748.9590](https://download.microsoft.com/download/8/3/6/836E3E99-A300-4714-8278-96BC3E8B5528/8.2.1748.9590/Microsoft.Azure.ServiceFabric.WindowsServer.8.2.1748.9590.zip) <br/>
+[8.2.1723.9590](https://download.microsoft.com/download/8/3/6/836E3E99-A300-4714-8278-96BC3E8B5528/8.2.1723.9590/Microsoft.Azure.ServiceFabric.WindowsServer.8.2.1723.9590.zip) <br/>
 [8.2.1692.9590](https://download.microsoft.com/download/8/3/6/836E3E99-A300-4714-8278-96BC3E8B5528/8.2.1692.9590/Microsoft.Azure.ServiceFabric.WindowsServer.8.2.1692.9590.zip) <br/>
 [8.2.1686.9590](https://download.microsoft.com/download/8/3/6/836E3E99-A300-4714-8278-96BC3E8B5528/8.2.1686.9590/Microsoft.Azure.ServiceFabric.WindowsServer.8.2.1686.9590.zip) <br/>
 [8.2.1659.9590](https://download.microsoft.com/download/8/3/6/836E3E99-A300-4714-8278-96BC3E8B5528/8.2.1659.9590/Microsoft.Azure.ServiceFabric.WindowsServer.8.2.1659.9590.zip) <br/>
