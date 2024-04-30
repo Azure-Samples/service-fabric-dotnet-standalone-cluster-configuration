@@ -1,7 +1,7 @@
 {
     "name": "SampleCluster",
     "clusterConfigurationVersion": "1.0.0",
-    "apiVersion": "06-2023",
+    "apiVersion": "05-2020",
     "nodes": [
       {
         "nodeName": "vm0",

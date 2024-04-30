@@ -1,7 +1,7 @@
 {
     "name": "SampleCluster",
     "clusterConfigurationVersion": "1.0.0",
-    "apiVersion": "06-2023",
+    "apiVersion": "11-2022",
     "nodes": [
       {
         "nodeName": "vm0",
@@ -27,6 +27,8 @@
     ],
 
     "properties": {
+	"codeVersion" : "*",
+
         "diagnosticsStore": 
         {
             "metadata":  "Please replace the diagnostics file share with an actual file share accessible from all cluster machines. For example, \\\\localhost\\DiagnosticsStore.",
