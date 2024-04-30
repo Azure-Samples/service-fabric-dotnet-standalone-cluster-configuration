@@ -1,7 +1,7 @@
 {
     "name": "SampleCluster",
     "clusterConfigurationVersion": "1.0.0",
-    "apiVersion": "06-2023",
+    "apiVersion": "11-2022",
     "nodes": [
         {
             "nodeName": "vm0",
@@ -26,25 +26,28 @@
         }
     ],
     "properties": {
-        "diagnosticsStore": 
-        {
-            "metadata":  "Please replace the diagnostics file share with an actual file share accessible from all cluster machines. For example, \\\\machine1\\DiagnosticsStore.",
+        "diagnosticsStore": {
+            "metadata": "Please replace the diagnostics file share with an actual file share accessible from all cluster machines.",
             "dataDeletionAgeInDays": "21",
             "storeType": "FileShare",
             "connectionstring": "c:\\ProgramData\\SF\\DiagnosticsStore"
         },
         "security": {
+            "metadata": "The Credential type X509 indicates this is cluster is secured using X509 Certificates. The thumbprint format is - d5 ec 42 3b 79 cb e5 07 fd 83 59 3c 56 b9 d5 31 24 25 42 64.",
             "ClusterCredentialType": "Windows",
-            "ServerCredentialType": "Windows",
+            "ServerCredentialType": "X509",
             "WindowsIdentities": {
-                "ClustergMSAIdentity": "[gMSA Identity]",
-                "ClusterSPN": "[Registered SPN for the gMSA account]",
-                "ClientIdentities": [
-                    {
-                        "Identity": "domain\\username",
-                        "IsAdmin": true
-                    }
-                ]
+                "ClusterIdentity": "domain\\machinegroup"
+            },
+            "CertificateInformation": {
+                "ServerCertificateCommonNames": {
+                    "CommonNames": [
+                        {
+                            "CertificateCommonName": "[CertificateCommonName]"
+                        }
+                    ],
+                    "X509StoreName": "My"
+                }
             }
         },
         "nodeTypes": [
@@ -55,7 +58,7 @@
                 "leaseDriverEndpointPort": "19002",
                 "serviceConnectionEndpointPort": "19003",
                 "httpGatewayEndpointPort": "19080",
-                "reverseProxyEndpointPort": "19081",
+                "reverseProxyEndpointPort": "30000",
                 "applicationPorts": {
                     "startPort": "20001",
                     "endPort": "20031"
